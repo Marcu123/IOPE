@@ -1,0 +1,50 @@
+packs
+    pack testingg begin
+        bool question(bool ok) begin
+            return false;
+        end;
+    end srs;    
+end_packs
+global_v
+    int x1;
+    int x2;
+    int y;
+    float f = 1.0;
+    int arr[10] = {1, 2, 3};
+end_global_v
+
+global_f
+    int test(int x, int y, float ff) begin
+        return 2;
+    end;
+    int test1(int r) begin
+        return 3;
+    end;
+end_global_f
+execute
+
+int x = 10; x1 = 20; x2 = 30; y = 100;
+x = 2;
+if (x1 + test(x1,x2,f) < 5 + x1 and ((x > 2 or x1 < 4+x2) or x == 2)) begin
+    x = 2; 
+    end
+else begin
+    x = 3; 
+    end;
+
+x1 = x*100 + 5 * 100 + arr[2];
+Typeof(test1(test1(test1(test1(x1))))+10);
+Eval(x*10-100);
+Eval(x1);
+Eval(x2* 10-200) ;
+char cd='a';
+Eval(x+test(x1,x,f));
+Typeof(x+23);
+Typeof(f-30.0);
+Eval(999999+999999); 
+bool tttt = true;
+srs->question(srs->question(tttt));
+Typeof(srs->question(tttt));
+die
+
+

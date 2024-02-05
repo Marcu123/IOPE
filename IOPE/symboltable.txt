@@ -1,0 +1,32 @@
+Symbol Table
+
+VARS: 
+type: int	 name: x1	 value: 803	 scope: global; 
+type: int	 name: x2	 value: 30	 scope: global; 
+type: int	 name: y	 value: 100	 scope: global; 
+type: float	 name: f	 value: 1.0	 scope: global; 
+type: int	 name: x	 value: 3	 scope: main; 
+type: char	 name: cd	 value: 'a'	 scope: main; 
+type: bool	 name: tttt	 value: true	 scope: main; 
+
+FUNCS: 
+type: bool	 name: question	 scope: testingg; 
+params: 	type: bool	name: ok; 
+
+type: int	 name: test	 scope: global; 
+params: 	type: int	name: x; 	type: int	name: y; 	type: float	name: ff; 
+
+type: int	 name: test1	 scope: global; 
+params: 	type: int	name: r; 
+
+
+VECS: 
+type: int 	 name: arr	size: [10] 	 scope: global
+values: 1 2 3 null null null null null null null 
+
+PACKS: 
+name: srs type: testingg
+vars: 
+vecs: 
+
+
